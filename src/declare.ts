@@ -6,8 +6,8 @@
 
 export type Coordinate = {
 
-    latitude: number;
-    longitude: number;
+    readonly latitude: number;
+    readonly longitude: number;
 };
 
 export type PointGeometry = {
