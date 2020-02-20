@@ -5,8 +5,9 @@
  */
 
 import { Schema, SchemaTypeOpts } from "mongoose";
+import { PointGeometry } from "./declare";
 
-export const createPointGeometrySchemaType = (required: boolean = false, index: boolean = false): SchemaTypeOpts<any> => {
+export const createPointGeometrySchemaType = (required: boolean = false, index: boolean = false): SchemaTypeOpts<Schema<PointGeometry>> => {
 
     return {
         type: createPointGeometrySchema(),
@@ -15,7 +16,7 @@ export const createPointGeometrySchemaType = (required: boolean = false, index: 
     };
 };
 
-export const createPointGeometrySchema = (): Schema => {
+export const createPointGeometrySchema = (): Schema<PointGeometry> => {
 
     return new Schema({
 
