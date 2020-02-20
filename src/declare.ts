@@ -23,3 +23,14 @@ export const createPointGeometry = (coordinate: Coordinate): PointGeometry => {
         coordinates: [coordinate.longitude, coordinate.latitude],
     };
 };
+
+export const parsePointGeometry = (geometry: PointGeometry): Coordinate => {
+
+    const longitude: number = geometry.coordinates[0];
+    const latitude: number = geometry.coordinates[1];
+
+    return {
+        latitude,
+        longitude,
+    };
+};
