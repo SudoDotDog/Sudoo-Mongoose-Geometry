@@ -16,6 +16,14 @@ export const createPointGeometrySchemaType = (required: boolean = false, index: 
     };
 };
 
+export const createNotIndexedPointGeometrySchemaType = (required: boolean = false): SchemaTypeOpts<Schema<PointGeometry>> => {
+
+    return {
+        type: createPointGeometrySchema(),
+        required,
+    };
+};
+
 export const createPointGeometrySchema = (): Schema<PointGeometry> => {
 
     return new Schema({
