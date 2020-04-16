@@ -1,6 +1,6 @@
 {
   "name": "@sudoo/mongoose-geometry",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": ":foggy: Geometry support for Mongoose",
   "main": "index.js",
   "directories": {
@@ -17,12 +17,12 @@
   },
   "homepage": "https://github.com/SudoDotDog/Sudoo-Mongoose-Geometry#readme",
   "peerDependencies": {
+    "@sudoo/geometry": "*",
     "mongoose": "*"
   },
-  "dependencies": {
-    "@sudoo/geometry": "^1.0.1"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@sudoo/geometry": "^1.1.0",
     "@sudoo/io": "^1.7.0",
     "@sudoo/triforce": "^2.2.1",
     "@sudoo/triforce-mongoose-dev": "^1.4.1",
