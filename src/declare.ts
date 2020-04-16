@@ -4,11 +4,7 @@
  * @description Declare
  */
 
-export type Coordinate = {
-
-    readonly latitude: number;
-    readonly longitude: number;
-};
+import { Coordinate } from "@sudoo/geometry";
 
 export type PointGeometry = {
 

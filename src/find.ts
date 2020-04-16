@@ -4,7 +4,8 @@
  * @description Find
  */
 
-import { Coordinate, createPointGeometry, PointGeometry } from "./declare";
+import { Coordinate } from "@sudoo/geometry";
+import { createPointGeometry, PointGeometry } from "./declare";
 
 export type FindPointGeometryNearQuery = {
 

@@ -5,9 +5,10 @@
  * @override Unit Test
  */
 
+import { Coordinate } from "@sudoo/geometry";
 import { expect } from "chai";
 import * as Chance from "chance";
-import { Coordinate, createPointGeometry, parsePointGeometry, PointGeometry } from "../../src/declare";
+import { createPointGeometry, parsePointGeometry, PointGeometry } from "../../src";
 
 describe('Given [Declare] helper functions', (): void => {
 
