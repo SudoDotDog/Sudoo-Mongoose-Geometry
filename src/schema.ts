@@ -4,10 +4,10 @@
  * @description Schema
  */
 
+import { GeoJsonPoint } from "@sudoo/geometry";
 import { Schema, SchemaTypeOpts } from "mongoose";
-import { PointGeometry } from "./declare";
 
-export const createPointGeometrySchemaType = (required: boolean = false, index: boolean = false): SchemaTypeOpts<Schema<PointGeometry>> => {
+export const createPointGeometrySchemaType = (required: boolean = false, index: boolean = false): SchemaTypeOpts<Schema<GeoJsonPoint>> => {
 
     return {
         type: createPointGeometrySchema(),
@@ -16,7 +16,7 @@ export const createPointGeometrySchemaType = (required: boolean = false, index: 
     };
 };
 
-export const createNotIndexedPointGeometrySchemaType = (required: boolean = false): SchemaTypeOpts<Schema<PointGeometry>> => {
+export const createNotIndexedPointGeometrySchemaType = (required: boolean = false): SchemaTypeOpts<Schema<GeoJsonPoint>> => {
 
     return {
         type: createPointGeometrySchema(),
@@ -24,7 +24,7 @@ export const createNotIndexedPointGeometrySchemaType = (required: boolean = fals
     };
 };
 
-export const createPointGeometrySchema = (): Schema<PointGeometry> => {
+export const createPointGeometrySchema = (): Schema<GeoJsonPoint> => {
 
     return new Schema({
 

@@ -4,14 +4,13 @@
  * @description Find
  */
 
-import { Coordinate } from "@sudoo/geometry";
-import { createPointGeometry, PointGeometry } from "./declare";
+import { Coordinate, createGeoJsonPoint, GeoJsonPoint } from "@sudoo/geometry";
 
 export type FindPointGeometryNearQuery = {
 
     readonly $near: {
         readonly $maxDistance: number;
-        readonly $geometry: PointGeometry;
+        readonly $geometry: GeoJsonPoint;
     };
 };
 
@@ -20,7 +19,7 @@ export const createFindPointGeometryNearQuery = (coordinate: Coordinate, maxDist
     return {
         $near: {
             $maxDistance: maxDistance,
-            $geometry: createPointGeometry(coordinate),
+            $geometry: createGeoJsonPoint(coordinate),
         },
     };
 };
