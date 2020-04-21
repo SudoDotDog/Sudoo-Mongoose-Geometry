@@ -1,6 +1,6 @@
 {
   "name": "@sudoo/mongoose-geometry",
-  "version": "1.6.0",
+  "version": "1.6.2",
   "description": ":foggy: Geometry support for Mongoose",
   "main": "index.js",
   "directories": {
@@ -22,7 +22,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@sudoo/geometry": "^1.6.0",
+    "@sudoo/geometry": "^1.6.2",
     "@sudoo/io": "^1.7.0",
     "@sudoo/triforce": "^2.3.1",
     "@sudoo/triforce-mongoose-dev": "^1.4.1",
