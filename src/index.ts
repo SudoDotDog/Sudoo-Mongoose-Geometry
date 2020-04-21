@@ -4,7 +4,6 @@
  * @description Index
  */
 
-export * from "./declare";
 export * from "./find";
 export * from "./schema";
 
