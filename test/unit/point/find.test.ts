@@ -8,7 +8,7 @@
 import { Coordinate, createCoordinate, createGeoJsonPoint } from "@sudoo/geometry";
 import { expect } from "chai";
 import * as Chance from "chance";
-import { createFindPointGeometryNearQuery, FindPointGeometryNearQuery } from "../../src";
+import { createFindPointGeometryNearQuery, FindPointGeometryNearQuery } from "../../../src";
 
 describe('Given [Find] helper functions', (): void => {
 

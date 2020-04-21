@@ -4,6 +4,6 @@
  * @description Index
  */
 
-export * from "./find";
-export * from "./schema";
+export * from "./point/find";
+export * from "./point/schema";
 
