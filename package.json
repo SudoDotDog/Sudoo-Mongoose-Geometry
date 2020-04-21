@@ -1,6 +1,6 @@
 {
   "name": "@sudoo/mongoose-geometry",
-  "version": "1.6.2",
+  "version": "1.7.0",
   "description": ":foggy: Geometry support for Mongoose",
   "main": "index.js",
   "directories": {

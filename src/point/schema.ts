@@ -1,6 +1,6 @@
 /**
  * @author WMXPY
- * @namespace Geometry
+ * @namespace Geometry_Point
  * @description Schema
  */
 

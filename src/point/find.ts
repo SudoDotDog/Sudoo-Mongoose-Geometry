@@ -1,6 +1,6 @@
 /**
  * @author WMXPY
- * @namespace Geometry
+ * @namespace Geometry_Point
  * @description Find
  */
 
@@ -14,11 +14,27 @@ export type FindPointGeometryNearQuery = {
     };
 };
 
+export type FindPointGeometryIntersectsQuery = {
+
+    readonly $geoIntersects: {
+        readonly $geometry: GeoJsonPoint;
+    };
+};
+
 export const createFindPointGeometryNearQuery = (coordinate: Coordinate, maxDistance: number): FindPointGeometryNearQuery => {
 
     return {
         $near: {
             $maxDistance: maxDistance,
+            $geometry: createGeoJsonPoint(coordinate),
+        },
+    };
+};
+
+export const createFindPointGeometryIntersectsQuery = (coordinate: Coordinate): FindPointGeometryIntersectsQuery => {
+
+    return {
+        $geoIntersects: {
             $geometry: createGeoJsonPoint(coordinate),
         },
     };
