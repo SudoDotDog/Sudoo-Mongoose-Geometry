@@ -4,7 +4,7 @@
  * @description Find
  */
 
-import { Coordinate, createGeoJsonPolygon, GeoJsonPolygon } from "@sudoo/geometry";
+import { createGeoJsonPolygon, GeoJsonPolygon, PolygonCoordinate } from "@sudoo/geometry";
 
 export type FindPolygonGeometryWithinQuery = {
 
@@ -13,7 +13,7 @@ export type FindPolygonGeometryWithinQuery = {
     };
 };
 
-export const createFindPolygonGeometryWithinQuery = (polygon: Coordinate[][]): FindPolygonGeometryWithinQuery => {
+export const createFindPolygonGeometryWithinQuery = (polygon: PolygonCoordinate): FindPolygonGeometryWithinQuery => {
 
     return {
         $geoWithin: {
